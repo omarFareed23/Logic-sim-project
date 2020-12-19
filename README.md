@@ -1,4 +1,4 @@
 # Logic-sim-project
-```bash
-x=5
+```shell
+echo "omar"
 ```
