@@ -1,2 +1,4 @@
 # Logic-sim-project
-`` use code ``
+```bash
+x=5
+```
