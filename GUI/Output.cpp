@@ -29,7 +29,7 @@ Input* Output::CreateInput() const
 	return pIn;
 }
 const int Design_Bar_X = (UI.width - (ITM_DSN_COUNT * UI.ToolItemWidth)) / 2; // Design toolbar x
-const int gate1_x1 = (UI.width - (ITM_CNT_TOOL_BAR1 * UI.ToolItemWidth)) / 2; // Gate1 x
+const int gate1_x1 = (UI.width - ITM_CNT_TOOL_BAR1 * UI.ToolItemWidth) / 2; // Gate1 x
 const int gate1_x2 = (UI.width - (ITM_CNT_TOOL_BAR2 * UI.ToolItemWidth)) / 2; // Gate1 x
 const int tools_x = (UI.width - (ITM_TOOL_CNT * UI.ToolItemWidth)) / 2; // tools x
 const int Design_Bar_Y = UI.ToolBarHeight; // toolbarheight
@@ -192,7 +192,7 @@ void Output::CreateGatesToolBar(bool selected) const
 
 		//Draw menu item one image at a time
 		for (int i = 0; i < ITM_CNT_TOOL_BAR2; i++)
-			pWind->DrawImage(Gates2[i], i * UI.ToolItemWidth + Design_Bar_X, height, UI.ToolItemWidth, UI.ToolBarHeight);
+			pWind->DrawImage(Gates2[i], i * UI.ToolItemWidth + gate1_x2, height, UI.ToolItemWidth, UI.ToolBarHeight);
 
 	}
 }
