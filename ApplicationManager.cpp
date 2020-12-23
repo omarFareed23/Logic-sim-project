@@ -23,7 +23,7 @@ void ApplicationManager::AddComponent(Component* pComp)
 ActionType ApplicationManager::GetUserAction()
 {
 	//Call input to get what action is reuired from the user
-	return InputInterface->GetUserAction(); 	
+	return InputInterface->GetUserAction();
 }
 ////////////////////////////////////////////////////////////////////
 
@@ -39,8 +39,11 @@ void ApplicationManager::ExecuteAction(ActionType ActType)
 		case ADD_CONNECTION:
 			//TODO: Create AddConection Action here
 			break;
-	
-
+		case ADD_GATE:
+			OutputInterface->CreateGatesToolBar(0);
+			UI.addedGates = 1;
+			UI.firstGates = 1;
+			break;
 		case EXIT:
 			///TODO: create ExitAction here
 			break;
