@@ -159,15 +159,15 @@ void Output::CreateGatesToolBar(bool selected) const
 	if (selected)
 	{
 		string MenuItemImages[ITM_CNT_TOOL_BAR1];
-		MenuItemImages[ITM_BUFF] = "images\\inactive\\save.jpg";
-		MenuItemImages[ITM_INV] = "images\\inactive\\save.jpg";
-		MenuItemImages[ITM_AND2] = "images\\inactive\\save.jpg";
-		MenuItemImages[ITM_OR2] = "images\\inactive\\save.jpg";
-		MenuItemImages[ITM_NAND2] = "images\\inactive\\save.jpg";
-		MenuItemImages[ITM_NOR2] = "images\\inactive\\save.jpg";
-		MenuItemImages[ITM_XOR2] = "images\\inactive\\save.jpg";
-		MenuItemImages[ITM_XNOR2] = "images\\inactive\\save.jpg";
-		MenuItemImages[ITM_SCROLL] = "images\\inactive\\save.jpg";
+		MenuItemImages[ITM_BUFF] = "images\\Menu\\save.jpg";
+		MenuItemImages[ITM_INV] = "images\\Menu\\save.jpg";
+		MenuItemImages[ITM_AND2] = "images\\Menu\\save.jpg";
+		MenuItemImages[ITM_OR2] = "images\\Menu\\save.jpg";
+		MenuItemImages[ITM_NAND2] = "images\\Menu\\save.jpg";
+		MenuItemImages[ITM_NOR2] = "images\\Menu\\save.jpg";
+		MenuItemImages[ITM_XOR2] = "images\\Menu\\save.jpg";
+		MenuItemImages[ITM_XNOR2] = "images\\Menu\\save.jpg";
+		MenuItemImages[ITM_SCROLL] = "images\\Menu\\save.jpg";
 
 		//TODO: Prepare image for each menu item and add it to the list
 

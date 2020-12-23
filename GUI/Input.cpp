@@ -110,7 +110,9 @@ ActionType Input::GetUserAction() const
 			{
 				if (UI.firstGates)
 				{
+					cout << x << endl;
 					int ClickedItemOrder = (x - ((UI.width - ITM_CNT_TOOL_BAR1 * UI.ToolItemWidth) / 2)) / UI.ToolItemWidth;
+					cout << ClickedItemOrder << endl;
 					switch (ClickedItemOrder)
 					{
 					case ITM_BUFF:

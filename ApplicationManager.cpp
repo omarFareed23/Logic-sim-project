@@ -40,7 +40,7 @@ void ApplicationManager::ExecuteAction(ActionType ActType)
 			//TODO: Create AddConection Action here
 			break;
 		case ADD_GATE:
-			OutputInterface->CreateGatesToolBar(0);
+			OutputInterface->CreateGatesToolBar(1);
 			UI.addedGates = 1;
 			UI.firstGates = 1;
 			break;
