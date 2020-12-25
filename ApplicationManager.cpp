@@ -2,6 +2,15 @@
 #include "Actions\AddANDgate2.h"
 
 
+Component* ApplicationManager::getTheComponentClickedOn(int x, int y)
+{
+	for (int i = 0; i < CompCount; i++)
+	{
+		if (CompList[i]->ClickedHere(x, y)) return CompList[i];
+	}
+	return nullptr;
+}
+
 ApplicationManager::ApplicationManager()
 {
 	CompCount = 0;

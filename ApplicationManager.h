@@ -6,6 +6,7 @@
 #include "GUI\Input.h"
 #include "Actions\Action.h"
 #include "Components\Component.h"
+#include "Components\Gate.h"
 
 //Main class that manages everything in the application.
 class ApplicationManager
@@ -19,8 +20,6 @@ private:
 
 	Output* OutputInterface; //pointer to the Output Clase Interface
 	Input* InputInterface; //pointer to the Input Clase Interface
-
-
 public:
 
 
@@ -38,7 +37,7 @@ public:
 	//Gets a pointer to Input / Output Object
 	Output* GetOutput();
 	Input* GetInput();
-
+	Component* getTheComponentClickedOn(int x, int y);
 	//Adds a new component to the list of components
 	void AddComponent(Component* pComp);
 
