@@ -32,7 +32,6 @@ int AND2::GetOutPinStatus()
 	return m_OutputPin.getStatus();
 }
 
-
 //returns status of Inputpin #n
 int AND2::GetInputPinStatus(int n)	
 {
@@ -43,4 +42,11 @@ int AND2::GetInputPinStatus(int n)
 void AND2::setInputPinStatus(int n, STATUS s)
 {
 	m_InputPins[n-1].setStatus(s);
+}
+
+bool AND2::ClickedHere(int x, int y)
+{
+	if (x >= m_GfxInfo.x1 && x <= m_GfxInfo.x2 && y >= m_GfxInfo.y1 && y <= m_GfxInfo.y2) 
+		return true;
+	return false;
 }
